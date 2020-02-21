@@ -1,15 +1,10 @@
-/* source: https://github.com/avinoamr/bootstrap-carousel-swipe */
-/* changes from Mobirise team */
+
 +function ($) {
     'use strict';
 
     if ( !$.fn.carousel ) {
         return
     }
-
-    // CAROUSEL CLASS DEFINITION
-    // =========================
-
     var CarouselSwipe = function(element) {
         this.$element    = $(element)
         this.carousel    = this.$element.data('bs.carousel')
@@ -133,9 +128,6 @@
 
         return this.$active;
     }
-
-    // CAROUSEL PLUGIN DEFINITION
-    // ==========================
 
     var old = $.fn.carousel
     $.fn.carousel = function() {

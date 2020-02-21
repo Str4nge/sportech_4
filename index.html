@@ -17,7 +17,55 @@
     <link rel="stylesheet" href="assets/socicon/css/styles.css">
     <link rel="stylesheet" href="assets/theme/css/style.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <style>
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
 
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            /* Could be more or less, depending on screen size */
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -121,11 +169,8 @@
     </section>
 
     <section class="clients cid-qx4ykgevUu " id="clients-3" data-rv-view="310">
-
-        <div class="mbr-overlay" style="opacity: 0.9; background-color: rgb(230, 230, 230);">
-        </div>
-        <div class="container mb-5">
-            <div class="media-container-row">
+        <div>
+            <div>
                 <div class="col-12 align-center">
                     <h2 class="mbr-section-title pb-3 mbr-fonts-style display-1">
                         EVENTS</h2>
@@ -136,13 +181,137 @@
             </div>
         </div>
 
+        <!-- The Modal -->
+        <div id="Athletics" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="popdn('Athletics')">&times;</span>
+                <p>Some text in the Athletics Modal..</p>
+            </div>
+
+        </div>
+        <!-- The Modal -->
+        <div id="Chess" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="popdn('Chess')">&times;</span>
+                <p>Some text in the Chess Modal..</p>
+            </div>
+
+        </div>
+        <!-- The Modal -->
+        <div id="Cricket" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="popdn('Cricket')">&times;</span>
+                <p>Some text in the Cricket Modal..</p>
+            </div>
+
+        </div>
+
+        <!-- The Modal -->
+        <div id="CSGO" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="popdn('CSGO')">&times;</span>
+                <p>Some text in the CSGO Modal..</p>
+            </div>
+
+        </div>
+        <!-- The Modal -->
+        <div id="Kabaddi" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="popdn('Kabaddi')">&times;</span>
+                <p>Some text in the Kabaddi Modal..</p>
+            </div>
+
+        </div>
+        <!-- The Modal -->
+        <div id="Lemon" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="popdn('Lemon')">&times;</span>
+                <p>Some text in the Lemon Modal..</p>
+            </div>
+
+        </div>
+        <!-- The Modal -->
+        <div id="jump" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="popdn('jump')">&times;</span>
+                <p>Some text in the jump Modal..</p>
+            </div>
+
+        </div>
+
+        <!-- The Modal -->
+        <div id="pubg" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="popdn('pubg')">&times;</span>
+                <p>Some text in the pubg Modal..</p>
+            </div>
+
+        </div>
+        <!-- The Modal -->
+        <div id="cube" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="popdn('cube')">&times;</span>
+                <p>Some text in the cube Modal..</p>
+            </div>
+
+        </div>
+
+        <!-- The Modal -->
+        <div id="cycling" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="popdn('cycling')">&times;</span>
+                <p>Some text in the cycling Modal..</p>
+            </div>
+
+        </div>
+        <!-- The Modal -->
+        <div id="tt" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="popdn('tt')">&times;</span>
+                <p>Some text in the tt Modal..</p>
+            </div>
+
+        </div>
+        <!-- The Modal -->
+        <div id="tug" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="popdn('tug')">&times;</span>
+                <p>Some text in the tug Modal..</p>
+            </div>
+
+        </div>
+
         <div class="container">
             <div class="carousel slide" data-ride="carousel" role="listbox">
                 <div class="carousel-inner" data-visible="5">
                     <div class="carousel-item ">
                         <div class="media-container-row">
                             <div class="col-md-12">
-                                <div class="wrap-img ">
+                                <div class="wrap-img " onclick="popup('Athletics')">
                                     <img src="assets/images/1.png" class="img-responsive clients-img"
                                         media-simple="true">
                                     <p><b>Athletics</b></p>
@@ -153,7 +322,7 @@
                     <div class="carousel-item ">
                         <div class="media-container-row">
                             <div class="col-md-12">
-                                <div class="wrap-img ">
+                                <div class="wrap-img" onclick="popup('Chess')">
                                     <img src="assets/images/2.png" class="img-responsive clients-img"
                                         media-simple="true">
                                     <p><b>Chess</b></p>
@@ -164,7 +333,7 @@
                     <div class="carousel-item ">
                         <div class="media-container-row">
                             <div class="col-md-12">
-                                <div class="wrap-img ">
+                                <div class="wrap-img " onclick="popup('Cricket')">
                                     <img src="assets/images/3.png" class="img-responsive clients-img"
                                         media-simple="true">
                                     <b>
@@ -177,7 +346,7 @@
                     <div class="carousel-item ">
                         <div class="media-container-row">
                             <div class="col-md-12">
-                                <div class="wrap-img ">
+                                <div class="wrap-img " onclick="popup('CSGO')">
                                     <img src="assets/images/4.png" class="img-responsive clients-img"
                                         media-simple="true">
                                     <p><b>CSGO</b></p>
@@ -188,7 +357,7 @@
                     <div class="carousel-item ">
                         <div class="media-container-row">
                             <div class="col-md-12">
-                                <div class="wrap-img ">
+                                <div class="wrap-img " onclick="popup('Kabaddi')">
                                     <img src="assets/images/5.png" class="img-responsive clients-img"
                                         media-simple="true">
                                     <p><b>Kabaddi</b></p>
@@ -197,7 +366,7 @@
                         </div>
                     </div>
                     <div class="carousel-item ">
-                        <div class="media-container-row">
+                        <div class="media-container-row" onclick="popup('Lemon')">
                             <div class="col-md-12">
                                 <div class="wrap-img ">
                                     <img src="assets/images/6.png" class="img-responsive clients-img"
@@ -210,7 +379,7 @@
                     <div class="carousel-item ">
                         <div class="media-container-row">
                             <div class="col-md-12">
-                                <div class="wrap-img ">
+                                <div class="wrap-img " onclick="popup('jump')">
                                     <img src="assets/images/7.png" class="img-responsive clients-img"
                                         media-simple="true">
                                     <p><b>Long Jump</b></p>
@@ -221,7 +390,7 @@
                     <div class="carousel-item ">
                         <div class="media-container-row">
                             <div class="col-md-12">
-                                <div class="wrap-img ">
+                                <div class="wrap-img " onclick="popup('pubg')">
                                     <img src="assets/images/8.png" class="img-responsive clients-img"
                                         media-simple="true">
                                     <p><b>PUBG-M</b></p>
@@ -232,7 +401,7 @@
                     <div class="carousel-item ">
                         <div class="media-container-row">
                             <div class="col-md-12">
-                                <div class="wrap-img ">
+                                <div class="wrap-img " onclick="popup('cube')">
                                     <img src="assets/images/9.png" class="img-responsive clients-img"
                                         media-simple="true">
                                     <p><b>Rubik's Cube Solving</b></p>
@@ -243,7 +412,7 @@
                     <div class="carousel-item ">
                         <div class="media-container-row">
                             <div class="col-md-12">
-                                <div class="wrap-img ">
+                                <div class="wrap-img " onclick="popup('cycling')">
                                     <img src="assets/images/10.png" class="img-responsive clients-img"
                                         media-simple="true">
                                     <p><b>Slow Cycling Race</b></p>
@@ -254,7 +423,7 @@
                     <div class="carousel-item ">
                         <div class="media-container-row">
                             <div class="col-md-12">
-                                <div class="wrap-img ">
+                                <div class="wrap-img " onclick="popup('tt')">
                                     <img src="assets/images/11.png" class="img-responsive clients-img"
                                         media-simple="true">
                                     <p><b>Table Tennis</b></p>
@@ -265,7 +434,7 @@
                     <div class="carousel-item ">
                         <div class="media-container-row">
                             <div class="col-md-12">
-                                <div class="wrap-img ">
+                                <div class="wrap-img " onclick="popup('tug')">
                                     <img src="assets/images/12.png" class="img-responsive clients-img"
                                         media-simple="true">
                                     <p><b>Tug of War</b></p>
@@ -298,9 +467,6 @@
 
         <div class="container">
             <div class="row justify-content-center">
-                <div class="media-container-column col-12 col-lg-3 col-md-4">
-
-                </div>
                 <div class="media-container-column title col-12 col-lg-7 col-md-6">
                     <h2 class="align-right mbr-bold mbr-white pb-3 mbr-fonts-style display-2"><span
                             style="font-weight: normal;">#MEGASPORTECH2020</span></h2>
@@ -334,10 +500,12 @@
                         <div class="card-box">
                             <center>
                                 <i class="fa fa-user-circle-o" style="font-size: 175px; color:#535252;"></i>
-                                <h4 class="card-title mbr-fonts-style display-7" style="margin-top: 20px;">Arshad Ali
+                                <h4 class="card-title mbr-fonts-style display-7"
+                                    style="margin-top: 20px;font-weight:bolder;">Arshad Ali
                                 </h4>
                                 <p class="mbr-text mbr-fonts-style display-7">
-                                    83840 55947
+                                    Mechanical, 3rd Year<br>
+                                    <i class="fa fa-phone"> </i> 83840 55947
                                 </p>
                             </center>
                         </div>
@@ -351,10 +519,12 @@
                         <div class="card-box ">
                             <center>
                                 <i class="fa fa-user-circle-o" style="font-size: 175px; color:#535252;"></i>
-                                <h4 class="card-title mbr-fonts-style display-7" style="margin-top: 20px;">Vishal Sharma
+                                <h4 class="card-title mbr-fonts-style display-7"
+                                    style="margin-top: 20px;font-weight:bolder;">Vishal Sharma
                                 </h4>
                                 <p class="mbr-text mbr-fonts-style display-7">
-                                    85880 08196</p>
+                                    CSE, 3rd Year<br>
+                                    <i class="fa fa-phone"> </i> 85880 08196</p>
                             </center>
                         </div>
                     </div>
@@ -367,9 +537,11 @@
                         <div class="card-box">
                             <center>
                                 <i class="fa fa-user-circle-o" style="font-size: 175px; color:#535252;"></i>
-                                <h4 class="card-title mbr-fonts-style display-7" style="margin-top: 20px;">Deepak</h4>
+                                <h4 class="card-title mbr-fonts-style display-7"
+                                    style="margin-top: 20px;font-weight:bolder;">Deepak</h4>
                                 <p class="mbr-text mbr-fonts-style display-7">
-                                    87086 89303
+                                    Mechanical, 3rd Year<br>
+                                    <i class="fa fa-phone"> </i> 87086 89303
                                 </p>
                             </center>
                         </div>
@@ -432,13 +604,11 @@
                 </div>
                 <div class="row row-copirayt">
                     <p class="mbr-text mb-0 mbr-fonts-style mbr-white display-7">
-                        UIET, MAHARSHI DAYANAND UNIVERSITY, Rohtak-124001, Haryana (INDIA)</p>
+                        UIET, MAHARSHI DAYANAND UNIVERSITY, <br>Rohtak-124001, Haryana (INDIA)</p>
                 </div>
             </div>
         </div>
     </section>
-
-
     <script src="assets/web/assets/jquery/jquery.min.js"></script>
     <script src="assets/popper/popper.min.js"></script>
     <script src="assets/tether/tether.min.js"></script>
@@ -449,7 +619,29 @@
     <script src="assets/jarallax/jarallax.min.js"></script>
     <script src="assets/theme/js/script.js"></script>
     <script src="assets/formoid/formoid.min.js"></script>
+    <script>
 
+        // Get the <span> element that closes the modal
+        // var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        function popup(label) {
+            var modal = document.getElementById(label);
+            modal.style.display = "block";
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        function popdn(label) {
+            var modal = document.getElementById(label);
+            modal.style.display = "none";
+        }
+    </script>
 
 </body>
 

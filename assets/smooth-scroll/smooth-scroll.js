@@ -1,17 +1,3 @@
-//
-// SmoothScroll for websites v1.4.9 (Balazs Galambosi)
-// http://www.smoothscroll.net/
-//
-// Licensed under the terms of the MIT license.
-//
-// You may use it in your theme if you credit me.
-// It is also free to use on any individual website.
-//
-// Exception:
-// The only restriction is to not publish any
-// extension for browsers or native application
-// without getting a written permission first.
-//
 
 (function () {
 
@@ -61,23 +47,11 @@
     var key = { left: 37, up: 38, right: 39, down: 40, spacebar: 32,
         pageup: 33, pagedown: 34, end: 35, home: 36 };
     var arrowKeys = { 37: 1, 38: 1, 39: 1, 40: 1 };
-
-    /***********************************************
-     * INITIALIZE
-     ***********************************************/
-
-    /**
-     * Tests if smooth scrolling is allowed. Shuts down everything if not.
-     */
     function initTest() {
         if (options.keyboardSupport) {
             addEvent('keydown', keydown);
         }
     }
-
-    /**
-     * Sets up scrolls array, determines if frames are involved.
-     */
     function init() {
 
         if (initDone || !document.body) return;
@@ -99,13 +73,6 @@
         if (top != self) {
             isFrame = true;
         }
-
-        /**
-         * Safari 10 fixed it, Chrome fixed it in v45:
-         * This fixes a bug where the areas left and right to
-         * the content does not trigger the onmousewheel event
-         * on some pages. e.g.: html, body { height: 100% }
-         */
         else if (isOldSafari &&
             scrollHeight > windowHeight &&
             (body.offsetHeight <= windowHeight ||
@@ -489,11 +456,6 @@
         activeElement = event.target;
     }
 
-
-    /***********************************************
-     * OVERFLOW
-     ***********************************************/
-
     var uniqueID = (function () {
         var i = 0;
         return function (el) {
@@ -525,14 +487,6 @@
     function getCache(el, x) {
         return (x ? cacheX : cacheY)[uniqueID(el)];
     }
-
-//  (body)                (root)
-//         | hidden | visible | scroll |  auto  |
-// hidden  |   no   |    no   |   YES  |   YES  |
-// visible |   no   |   YES   |   YES  |   YES  |
-// scroll  |   no   |   YES   |   YES  |   YES  |
-// auto    |   no   |   YES   |   YES  |   YES  |
-
     function overflowingAncestor(el) {
         var elems = [];
         var body = document.body;
@@ -691,17 +645,6 @@
         };
     })();
 
-
-    /***********************************************
-     * PULSE (by Michael Herf)
-     ***********************************************/
-
-    /**
-     * Viscous fluid with a pulse for part and decay for the rest.
-     * - Applies a fixed force over an interval (a damped acceleration), and
-     * - Lets the exponential bleed away the velocity over a longer interval
-     * - Michael Herf, http://stereopsis.com/stopping/
-     */
     function pulse_(x) {
         var val, start, expx;
         // test
@@ -730,10 +673,6 @@
     }
 
 
-    /***********************************************
-     * FIRST RUN
-     ***********************************************/
-
     var userAgent = window.navigator.userAgent;
     var isEdge    = /Edge/.test(userAgent); // thank you MS
     var isChrome  = /chrome/i.test(userAgent) && !isEdge;
@@ -761,10 +700,6 @@
         addEvent('load', init);
     }
 
-
-    /***********************************************
-     * PUBLIC INTERFACE
-     ***********************************************/
 
     function SmoothScroll(optionsToSet) {
         for (var key in optionsToSet)
