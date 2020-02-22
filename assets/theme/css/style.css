@@ -421,68 +421,53 @@ nav .mbr-section-btn {
 	top: 0;
 	left: -2400px;
 }
-/* @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
-*, *:before, *:after {
-  box-sizing: border-box;
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: #0000008c;
+    /* Black w/ opacity */
 }
 
-body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#8c7a7a), color-stop(65%, #af877c), to(#af877c)) fixed;
-  background: linear-gradient(to bottom, #8c7a7a 0%, #af877c 65%, #af877c 100%) fixed;
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg") no-repeat center center fixed;
-  background-size: cover;
-  font: 14px/20px "Lato", Arial, sans-serif;
-  color: #9E9E9E;
-  margin-top: 30px;
-} */
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
 
-        /* The Modal (background) */
-        .modal {
-          display: none;
-          /* Hidden by default */
-          position: fixed;
-          /* Stay in place */
-          z-index: 1;
-          /* Sit on top */
-          left: 0;
-          top: 0;
-          width: 100%;
-          /* Full width */
-          height: 100%;
-          /* Full height */
-          overflow: auto;
-          /* Enable scroll if needed */
-          background-color: rgb(0, 0, 0);
-          /* Fallback color */
-          background-color: rgba(0, 0, 0, 0.4);
-          /* Black w/ opacity */
-      }
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
 
-      /* Modal Content/Box */
-      .modal-content {
-          background-color: #fefefe;
-          margin: 15% auto;
-          /* 15% from the top and centered */
-          padding: 20px;
-          border: 1px solid #888;
-          width: 80%;
-          /* Could be more or less, depending on screen size */
-      }
-
-      /* The Close Button */
-      .close {
-          color: #aaa;
-          float: right;
-          font-size: 28px;
-          font-weight: bold;
-      }
-
-      .close:hover,
-      .close:focus {
-          color: black;
-          text-decoration: none;
-          cursor: pointer;
-      }
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .slide-container {
   margin: auto;
@@ -519,19 +504,15 @@ body {
   background: url("../../../assets/images/bg2.jpg");
 }
 
-/* .clash-card__image--barbarian {
-  
-} */
+.img{
+  background: url("../../../assets/images/bg.jpg");
+}
 .clash-card__image--barbarian img {
   width: 400px;
   position: absolute;
   top: -65px;
   left: -70px;
 }
-
-/* .clash-card__image--archer {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg");
-} */
 .clash-card__image--archer img {
   width: 400px;
   position: absolute;
@@ -539,9 +520,6 @@ body {
   left: -37px;
 }
 
-/* .clash-card__image--giant {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg");
-} */
 .clash-card__image--giant img {
   width: 340px;
   position: absolute;
@@ -549,9 +527,6 @@ body {
   left: -25px;
 }
 
-/* .clash-card__image--goblin {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg");
-} */
 .clash-card__image--goblin img {
   width: 370px;
   position: absolute;
@@ -559,9 +534,6 @@ body {
   left: -37px;
 }
 
-/* .clash-card__image--wizard {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg");
-} */
 .clash-card__image--wizard img {
   width: 345px;
   position: absolute;
@@ -576,14 +548,6 @@ body {
   margin-bottom: 2px;
 }
 
-/* .clash-card__level--barbarian {
-  color: #EC9B3B;
-}
-
-.clash-card__level--archer {
-  color: #EE5487;
-} */
-
 .clash-card__level--giant {
   color: #F6901A;
 }
@@ -591,10 +555,6 @@ body {
 .clash-card__level--goblin {
   color: #82BB30;
 }
-
-/* .clash-card__level--wizard {
-  color: #4FACFF;
-} */
 
 .clash-card__unit-name {
   font-size: 26px;
@@ -607,20 +567,6 @@ body {
   padding: 15px;
   margin-bottom: 2px;
 }
-
-/* .clash-card__unit-stats--barbarian {
-  background: #EC9B3B;
-}
-.clash-card__unit-stats--barbarian .one-third {
-  border-right: 1px solid #BD7C2F;
-}
-
-.clash-card__unit-stats--archer {
-  background: #EE5487;
-}
-.clash-card__unit-stats--archer .one-third {
-  border-right: 1px solid #D04976;
-} */
 
 .clash-card__unit-stats--giant {
   background: #F6901A;
@@ -635,13 +581,6 @@ body {
 .clash-card__unit-stats--goblin .one-third {
   border-right: 1px solid #71a32a;
 }
-
-/* .clash-card__unit-stats--wizard {
-  background: #4FACFF;
-}
-.clash-card__unit-stats--wizard .one-third {
-  border-right: 1px solid #309eff;
-} */
 
 .clash-card__unit-stats {
   color: white;
