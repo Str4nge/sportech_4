@@ -588,6 +588,16 @@ nav .mbr-section-btn {
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
 }
+.unit_stats {
+  color: black;
+  font-weight: 400;
+}
+.unit_stats .half{
+  width: 50%;
+  float: left;
+  position: relative;
+  padding: 5px 5px;
+}
 .clash-card__unit-stats .one-third {
   width: 33%;
   float: left;
